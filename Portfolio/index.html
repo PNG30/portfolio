@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-index.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/general-css.css">
+    <!--Bootstrap CSS-->
+    <!-- CSS only -->
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--JS-->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/sidebar.js"></script>
+    <title>MainPage</title>
+</head>
+<body>
+    
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light">  
+    <button onclick="pFunction()" class="btn btn-warning">Portfolio</button>
+    <button onclick="projFunction()" class="btn btn-primary">Proyectos</button>
+    <button onclick="DownFunction()" class="btn btn-info">Descargas</button>
+    <button onclick="ContactMe()" class="btn btn-dark">Contacto</button>
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Conocimiento General
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#" onclick="Programming()">Programación</a></li>
+          <li><a class="dropdown-item" href="#" onclick="Literature()">Literatura</a></li>
+          <li><a class="dropdown-item" href="#" onclick="Computing()">Informática en general</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#" onclick="Music()">Música</a></li>
+        </ul>
+      </div>
+    </nav>
+ 
+    <!--DIV PRESENTACION-->
+    
+    <div style="border-style: dashed; color: black; border-style: groove; background-color: burlywood;" id="text1" >
+        <p style="font-size: 30px;">>Bienvenido a mi Portfolio. Mi nombre es Pablo, soy programador fullstack
+        en la <a href="/portfolio/">pestaña Portfolio</a> puede encontrar las certificaciones
+          obtenidas. <br> Me caracterizo por terminar los proyectos que me propongo de forma rápida y ágil, me gusta la lectura y estar al tanto de las últimas tecnologías. Dejo mi CV en el apartado <b><a href="/downloads/">Descargas</a>.</b>
+          <br>
+          <br>
+          En la sección Portfolio también encontrará acceso a mi <b><a href="/portfolio/">GitHub</a></b>
+        </p>  
+        
+          
+        </a>
+                                   
+    </div>
+   <br><br><br><br>
+
+   <!--DIV HOBBIES-->     
+    <div style="border-style: groove; color: red; background-color: aqua;" id="text2">
+        <p style="font-size: 30px;">
+        >Sobre mis hobbies están: 
+        <li style="font-size: 30px;">
+          <ol>Estudiar</ol>
+          <ol>Programar</ol>
+          <ol>Componer música</ol>
+          <ol>Investigación sobre diversos temas</ol>
+          <ol>Lectura en general</ol>
+        </li>
+        </p>
+    </div>      
+    
+    
+      
+    
+    
+    <footer>
+        <p><i class="fab fa-facebook-f"></i>Facebook</p>
+      </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+
+
+</html>

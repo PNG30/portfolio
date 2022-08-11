@@ -1,0 +1,53 @@
+body{
+    background-image: url('/multimedia/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+
+#menu, button{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+
+h2, h1{
+    font-style: oblique;
+    text-align: center;
+    color: lightcoral;
+}
+
+menu{
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+#menu, button{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+
+h2, h1{
+    font-style: oblique;
+    text-align: center;
+    color: white;
+}
+
+menu{
+    align-items: center;
+    text-align: center;
+}
+
+/*PORTFOLIO CSS*/
+body{
+    margin: 0;
+}
+

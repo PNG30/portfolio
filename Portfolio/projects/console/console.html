@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles-projects.css">
-    <script src="/js/script.js"></script>
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!--js projects-->
-    <script src="/js/projects.js"></script>
-    <title>Projects Page - CONSOLE PROJECTS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles-projects.css">
+  <script src="/js/script.js"></script>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--js projects-->
+  <script src="/js/projects.js"></script>
+  <title>Projects Page - CONSOLE PROJECTS</title>
 </head>
+
 <body background="/multimedia/artificial-intelligence-4389372_1920.jpg">
-    
-    <menu id="menuObject">
-       
-        <button onclick="Home()" class="btn btn-danger">Home</button>        
-        <button onclick="pFunction()" class="btn btn-warning">Portfolio</button>
-        <button onclick="projFunction()" class="btn btn-primary">Proyectos (CurrentPage)</button>
-        <button onclick="DownFunction()" class="btn btn-info">Descargas</button>
-    </menu>
 
-    
-    <menu id="subMenuObject">
-        <ul>
-            <br>
-            <li><button class="btn btn-danger" href="#">No se han encontrado proyectos por ahora</button></li>
-            <br>
-            </ul>
-        
-    </menu>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button onclick="pFunction()" class="btn btn-warning">Portfolio</button>
+    <button onclick="projFunction()" class="btn btn-primary">Proyectos</button>
+    <button onclick="DownFunction()" class="btn btn-info">Descargas</button>
+    <button onclick="ContactMe()" class="btn btn-dark">Contacto</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Conocimiento General
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#" onclick="Programming()">Programación</a></li>
+        <li><a class="dropdown-item" href="#" onclick="Training()">Formación</a></li>
+        <li><a class="dropdown-item" href="#" onclick="Computing()">Informática</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <!--<li><a class="dropdown-item" href="#" onclick="Music()">Música</a></li> -->
+      </ul>
+    </div>
+  </nav>
 
-    
-    <!--DIV BOOSTRAP CARD-->
-    <div class="row">
-        <div class="card" style="width: 18rem;">
-            <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto1</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <br>
-          <div class="card" style="width: 18rem;">
-            <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
 
-          <br>
-          <div class="card" style="width: 18rem;">
-            <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto3</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+  <menu id="subMenuObject">
+    <ul>
+      <br>
+      <li><button class="btn btn-danger" href="#">No se han encontrado proyectos por ahora</button></li>
+      <br>
+    </ul>
 
-          <br>
-          <div class="card" style="width: 18rem;">
-            <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto4</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+  </menu>
 
-          <br>
-          <div class="card" style="width: 18rem;">
-            <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto5</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-         </div>
-         <br>
-         
-         <li><button class="btn btn-success" onclick="projFunction()">Volver</button></li>
-    
+
+  <!--DIV BOOSTRAP CARD-->
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
+      <div class="card-body">
+        <h5 class="card-title">Proyecto1</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
+      <div class="card-body">
+        <h5 class="card-title">Proyecto2</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <br>
+    <div class="card" style="width: 18rem;">
+      <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
+      <div class="card-body">
+        <h5 class="card-title">Proyecto3</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <br>
+    <div class="card" style="width: 18rem;">
+      <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
+      <div class="card-body">
+        <h5 class="card-title">Proyecto4</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <br>
+    <div class="card" style="width: 18rem;">
+      <img src="/multimedia/artificial-intelligence-4389372_1920.jpg" class="card-img-top" alt="10x5">
+      <div class="card-body">
+        <h5 class="card-title">Proyecto5</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <li><button class="btn btn-success" onclick="projFunction()">Volver</button></li>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

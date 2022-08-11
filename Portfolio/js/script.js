@@ -215,6 +215,12 @@ function showBookPython() {
     window.open("/downloads/books/Aprender Python.pdf");
 }
 
+function showSubjects() {
+    console.log('/downloads/subjects/eduIT/index.html');
+    window.location.href="/downloads/subjects/subjects.html";
+    
+}
+
 
 
 

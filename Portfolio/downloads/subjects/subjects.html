@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles-index.css">
-  <link rel="shortcut icon" href="/multimedia/ico.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/sidebar.css">
+  <link rel="shortcut icon" href="/multimedia/ico.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/general-css.css">
   <!--Bootstrap CSS-->
   <!-- CSS only -->
@@ -34,13 +34,12 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/sidebar.js"></script>
-  <title>-> Informatica General</title>
+  <title>> Estudios > EducacionIT > Materias</title>
 </head>
 
 <body>
 
-
-  <menu id="menuObject">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <button onclick="pFunction()" class="btn btn-warning">Portfolio</button>
     <button onclick="projFunction()" class="btn btn-primary">Proyectos</button>
     <button onclick="DownFunction()" class="btn btn-info">Descargas</button>
@@ -51,71 +50,74 @@
       </button>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#" onclick="Programming()">Programación</a></li>
-         <li><a class="dropdown-item" href="#" onclick="Training()">Formacion</a></li>
-        <li><a class="dropdown-item" href="#" onclick="Computing()">Informática en general</a></li>
+        <li><a class="dropdown-item" href="#" onclick="Training()">Formación</a></li>
+        <li><a class="dropdown-item" href="#" onclick="Computing()">Informática</a></li>
         <li>
           <hr class="dropdown-divider">
         </li>
-        <!--  <li><a class="dropdown-item" href="#" onclick="Music()">Música</a></li> -->
+        <!--<li><a class="dropdown-item" href="#" onclick="Music()">Música</a></li> -->
       </ul>
     </div>
+  </nav>
+  <br>
+  <br>
+  <br>
 
 
+  <!--DIV BOOSTRAP CARD-->
 
-  </menu>
-  </menu>
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Java Para No programadores</div>
 
-  <!--INFO CARDS-->
-
-  <div class="row">
-    <div class="card" style="width: 18rem;">
-
-
-      <!--SERVICIO TECNICO-->
-      <div class="card-body">
-        <h5 class="card-title">Servicio Técnico</h5>
-        <p class="card-text">Limpieza de gabiente, instalación de Windows 8.1/10.</p>
-
-        <p>Copias de seguridad</p>
-        <p>Recuperación de Datos eliminados</p>
-        <p>Eliminación de Virus</p>
-        <p>Reemplazo de componentes</p>
       </div>
-    </div>
+      <span class="badge bg-primary rounded-pill">7</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Objetos</div>
 
-    <!--PROGRAMACIÓN-->
-    <div class="card" style="width: 18rem;">
-
-      <div class="card-body">
-        <h5 class="card-title">Programación en distintos lenguajes</h5>
-        <p class="card-text">Limpieza de gabiente, instalación de Windows 8.1/10.</p>
-
-        <p>Java [Backend]</p>
-        <p>HTML [FrontEnd]</p>
-        <p>JavaScript [FrontEnd]</p>
-        <p>CSS [FrontEnd]</p>
-        <p>Batch [Windows Scripting]</p>
       </div>
-    </div>
-  </div>
+      <span class="badge bg-primary rounded-pill">7</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between ">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Java Standandard</div>
 
-  <!--BASES DE DATOS-->
-  <div class="row">
-    <div class="card" style="width: 18rem;">
-    
-
-
-      <div class="card-body">
-        <h5 class="card-title">DATABASES</h5>
-        <p class="card-text"></p>
-
-        <p>MySQL</p>
       </div>
-    </div>
-  </div>  
+      <span class="badge bg-primary rounded-pill">7</span>
+    </li>
+  </ol>
+  <br>
+
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">JavaScript Modulo 1</div>
+
+      </div>
+      <span class="badge bg-primary rounded-pill">8</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">HTML</div>
+
+      </div>
+      <span class="badge bg-primary rounded-pill">7</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">SQL</div>
+
+      </div>
+      <span class="badge bg-primary rounded-pill">6</span>
+    </li>
+  </ol>
 
 
-  
+  <footer>
+
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -124,7 +126,3 @@
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
 </body>
-
-
-
-</html>

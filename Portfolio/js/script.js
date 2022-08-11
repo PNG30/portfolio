@@ -190,9 +190,9 @@ function Programming() {
     //alert('Programming');
 }
 
-function Literature() {
+function Training() {
     console.log('/generalKnowledge');
-    window.location.href="/generalKnowledge/literature/index.html";
+    window.location.href="/generalKnowledge/training/index.html";
     //alert('Literature');
 }
 

@@ -208,6 +208,13 @@ function Computing() {
 
 }
 
+//Funciones Estudios
+
+function showBookPython() {
+    console.log('/downloads/books/Aprender Python.pdf');
+    window.open("/downloads/books/Aprender Python.pdf");
+}
+
 
 
 
